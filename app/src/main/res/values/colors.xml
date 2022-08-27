@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+
+
+    //my custom palette 1
+    <color name="cafe_noir">#583E26</color>
+    <color name="beaver">#A78B71</color>
+    <color name="jonquil">#F7C815</color>
+    <color name="gamboge">#EC9704</color>
+    <color name="saddle_brown">#9C4A1A</color>
+    <color name="spanish_orange">#db5c01</color>
+    <color name="black_chocolate">#1b1612</color>
+    <color name="selective_yellow">#FCBA04</color>
+    
+    
+</resources>

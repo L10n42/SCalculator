@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SCalculator</string>
+
+    //fragment titles
+    <string name="title_calculator">Calculator</string>
+    <string name="title_steamC">Steam profit calculator</string>
+    <string name="title_percentC">Percent calculator</string>
+    <string name="title_currencyEx">Currency exchange</string>
+    
+    
+    <string-array name="currencies">
+        <item>@string/USD</item>
+        <item>@string/EUR</item>
+        <item>@string/UAH</item>
+        <item>@string/CNY</item>
+    </string-array>
+
+    //currencies strings
+    <string name="USD">USD</string>
+    <string name="UAH">UAH</string>
+    <string name="EUR">EUR</string>
+    <string name="CNY">CNY</string>
+
+</resources>

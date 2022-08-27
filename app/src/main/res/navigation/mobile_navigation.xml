@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_steamC">
+
+    <fragment
+        android:id="@+id/navigation_stickers"
+        android:name="com.example.scalculator_20.ui.stickers.StickersFragment"
+        android:label="@string/title_calculator"
+        tools:layout="@layout/fragment_stickers" />
+
+    <fragment
+        android:id="@+id/navigation_steamC"
+        android:name="com.example.scalculator_20.ui.steamC.SteamFragment"
+        android:label="@string/title_steamC"
+        tools:layout="@layout/fragment_steam" />
+
+    <fragment
+        android:id="@+id/navigation_percentC"
+        android:name="com.example.scalculator_20.ui.percentC.PercentFragment"
+        android:label="@string/title_percentC"
+        tools:layout="@layout/fragment_percent" />
+
+    <fragment
+        android:id="@+id/navigation_currencyEx"
+        android:name="com.example.scalculator_20.ui.currencyEx.CurrencyFragment"
+        android:label="@string/title_currencyEx"
+        tools:layout="@layout/fragment_currency" />
+
+</navigation>

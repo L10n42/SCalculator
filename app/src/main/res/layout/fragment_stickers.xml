@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black_chocolate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.stickers.StickersFragment">
+
+    <Spinner
+        android:id="@+id/chooseWeaponType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:backgroundTint="@color/spanish_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/instructionForSticker"
+        android:layout_width="0dp"
+        android:layout_height="150sp"
+        android:layout_marginHorizontal="20sp"
+        android:src="@drawable/instructions_for_stickers_ak_47"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseWeaponType" />
+
+    <EditText
+        android:id="@+id/editPos1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:background="@drawable/form_stroke"
+        android:inputType="numberDecimal|number"
+        android:maxLines="1"
+        android:minHeight="50sp"
+        android:paddingVertical="5sp"
+        android:textAlignment="center"
+        android:textColor="@color/spanish_orange"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instructionForSticker" />
+
+    <TextView
+        android:id="@+id/tvPos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="-11sp"
+        android:background="@drawable/form_edit_text_title"
+        android:paddingHorizontal="5sp"
+        android:text="Pos-1"
+        android:textColor="@color/spanish_orange"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/editPos1"
+        app:layout_constraintTop_toTopOf="@id/editPos1" />
+
+
+    <EditText
+        android:id="@+id/editPos2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/form_stroke"
+        android:inputType="numberDecimal|number"
+        android:maxLines="1"
+        android:minHeight="50sp"
+        android:paddingVertical="5sp"
+        android:textAlignment="center"
+        android:textColor="@color/spanish_orange"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPos1" />
+
+    <TextView
+        android:id="@+id/tvPos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="-11sp"
+        android:background="@drawable/form_edit_text_title"
+        android:paddingHorizontal="5sp"
+        android:text="Pos-2"
+        android:textColor="@color/spanish_orange"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/editPos2"
+        app:layout_constraintTop_toTopOf="@id/editPos2" />
+
+
+    <EditText
+        android:id="@+id/editPos3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/form_stroke"
+        android:inputType="numberDecimal|number"
+        android:maxLines="1"
+        android:minHeight="50sp"
+        android:paddingVertical="5sp"
+        android:textAlignment="center"
+        android:textColor="@color/spanish_orange"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPos2" />
+
+    <TextView
+        android:id="@+id/tvPos3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="-11sp"
+        android:background="@drawable/form_edit_text_title"
+        android:paddingHorizontal="5sp"
+        android:text="Pos-3"
+        android:textColor="@color/spanish_orange"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/editPos3"
+        app:layout_constraintTop_toTopOf="@id/editPos3" />
+
+
+    <EditText
+        android:id="@+id/editPos4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/form_stroke"
+        android:inputType="numberDecimal|number"
+        android:maxLines="1"
+        android:minHeight="50sp"
+        android:paddingVertical="5sp"
+        android:textAlignment="center"
+        android:textColor="@color/spanish_orange"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPos3" />
+
+    <TextView
+        android:id="@+id/tvPos4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="-11sp"
+        android:background="@drawable/form_edit_text_title"
+        android:paddingHorizontal="5sp"
+        android:text="Pos-4"
+        android:textColor="@color/spanish_orange"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/editPos4"
+        app:layout_constraintTop_toTopOf="@id/editPos4" />
+
+
+    <TextView
+        android:id="@+id/btnCount"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginHorizontal="70sp"
+        android:background="@drawable/form_stroke_button"
+        android:elevation="10sp"
+        android:paddingTop="5sp"
+        android:text="Count"
+        android:textAlignment="center"
+        android:textColor="@color/spanish_orange"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPos4" />
+
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/form_stroke"
+        android:minHeight="50sp"
+        android:paddingVertical="7sp"
+        android:text="Overpayment for stickers: 3456.23"
+        android:textAlignment="center"
+        android:textColor="@color/spanish_orange"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCount" />
+
+    <TextView
+        android:id="@+id/tvResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="-11sp"
+        android:background="@drawable/form_edit_text_title"
+        android:paddingHorizontal="5sp"
+        android:text="Result"
+        android:textColor="@color/spanish_orange"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tvResult"
+        app:layout_constraintTop_toTopOf="@id/tvResult" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

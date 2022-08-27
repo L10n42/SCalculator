@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_stickers"
+        android:icon="@drawable/custom_ic_sticker_icon"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_steamC"
+        android:icon="@drawable/custom_ic_steam_icon"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_percentC"
+        android:icon="@drawable/custom_ic_percent_icon"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_currencyEx"
+        android:icon="@drawable/custom_ic_dollar_icon"
+        android:title="" />
+
+</menu>
