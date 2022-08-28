@@ -45,6 +45,9 @@ class CurrencyFragment : Fragment() {
         binding.chooseCurrencyFrom.adapter = adapter
         binding.chooseCurrencyTo.adapter = adapter
 
+        binding.chooseCurrencyFrom.setPopupBackgroundResource(R.color.selective_yellow)
+        binding.chooseCurrencyTo.setPopupBackgroundResource(R.color.selective_yellow)
+
         binding.chooseCurrencyFrom.setSelection(0)
         binding.chooseCurrencyTo.setSelection(2)
 

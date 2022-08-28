@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.scalculator_20.R
 
 class CurrencySpinnerAdapter(context: Context, iconsArray: Array<Int>) : BaseAdapter() {
