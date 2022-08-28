@@ -9,16 +9,11 @@
     
     
     <string-array name="currencies">
-        <item>@string/USD</item>
-        <item>@string/EUR</item>
-        <item>@string/UAH</item>
-        <item>@string/CNY</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>UAH</item>
+        <item>CNY</item>
     </string-array>
 
-    //currencies strings
-    <string name="USD">USD</string>
-    <string name="UAH">UAH</string>
-    <string name="EUR">EUR</string>
-    <string name="CNY">CNY</string>
 
 </resources>

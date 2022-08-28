@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/selective_yellow"
+    android:layout_marginTop="5sp">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/sign_hryvnia"
+        app:tint="@color/spanish_orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:text="UAH"
+        android:textAlignment="center"
+        android:textColor="@color/spanish_orange"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

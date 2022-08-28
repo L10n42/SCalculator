@@ -41,35 +41,48 @@
         app:layout_constraintStart_toStartOf="@id/tvRate"
         app:layout_constraintTop_toTopOf="@id/tvRate" />
 
-    <Spinner
-        android:id="@+id/chooseCurrencyFrom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
-        android:layout_marginStart="20sp"
-        android:backgroundTint="@color/spanish_orange"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRate" />
-
-    <EditText
-        android:id="@+id/editValueFrom"
+    <LinearLayout
+        android:id="@+id/llFrom"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50sp"
+        android:layout_height="40sp"
         android:layout_marginTop="20sp"
+        android:orientation="horizontal"
         android:background="@drawable/form_stroke"
-        android:hint="value"
-        android:inputType="numberDecimal|number"
-        android:maxLines="1"
-        android:minHeight="40sp"
-        android:paddingVertical="5sp"
-        android:textAlignment="center"
-        android:textColor="@color/spanish_orange"
-        android:textColorHint="@color/saddle_brown"
-        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/tvRate"
-        app:layout_constraintStart_toEndOf="@+id/chooseCurrencyFrom"
-        app:layout_constraintTop_toBottomOf="@+id/tvRate" />
+        app:layout_constraintStart_toStartOf="@+id/tvRate"
+        app:layout_constraintTop_toBottomOf="@+id/tvRate">
+
+        <Spinner
+            android:id="@+id/chooseCurrencyFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10sp"
+            android:backgroundTint="@color/spanish_orange" />
+
+        <View
+            android:layout_width="2sp"
+            android:layout_height="30sp"
+            android:layout_marginStart="5sp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/spanish_orange"/>
+
+        <EditText
+            android:id="@+id/editValueFrom"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginHorizontal="10sp"
+            android:background="@android:color/transparent"
+            android:hint="Value"
+            android:inputType="numberDecimal|number"
+            android:maxLines="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAlignment="gravity"
+            android:textColor="@color/spanish_orange"
+            android:textColorHint="@color/saddle_brown"
+            android:textSize="24sp" />
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/downArrowLeft"
@@ -79,7 +92,7 @@
         android:layout_marginTop="40dp"
         android:src="@drawable/ic_baseline_keyboard_double_arrow_down_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editValueFrom"
+        app:layout_constraintTop_toBottomOf="@+id/llFrom"
         app:tint="@color/spanish_orange" />
 
 
@@ -91,7 +104,7 @@
         android:layout_marginEnd="30dp"
         android:src="@drawable/ic_baseline_keyboard_double_arrow_down_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editValueFrom"
+        app:layout_constraintTop_toBottomOf="@+id/llFrom"
         app:tint="@color/spanish_orange" />
 
     <TextView
