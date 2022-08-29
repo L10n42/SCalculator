@@ -6,8 +6,29 @@
     <string name="title_steamC">Steam profit calculator</string>
     <string name="title_percentC">Percent calculator</string>
     <string name="title_currencyEx">Currency exchange</string>
-    
-    
+
+    //hints
+    <string name="hint_commission_percent">13%</string>
+    <string name="hint_result">Here will be result…</string>
+
+    // tv/et titles
+    <string name="title_commission">Commission</string>
+    <string name="title_buy_price">Buy price</string>
+    <string name="title_sell_price">Sell price</string>
+    <string name="title_result">Result</string>
+
+    // button titles
+    <string name="btn_count_text">Count</string>
+
+    // error messages
+    <string name="error_enter_buy_price">Enter buy price!</string>
+    <string name="error_enter_sell_price">Enter sell price!</string>
+
+    // messages
+    <string name="result_profit">Clean profit:</string>
+    <string name="result_profit_percent">Profit(%):</string>
+
+
     <string-array name="currencies">
         <item>USD</item>
         <item>EUR</item>

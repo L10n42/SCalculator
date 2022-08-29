@@ -5,9 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class SteamViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+    val commission: MutableLiveData<Float> by lazy {
+        MutableLiveData<Float>()
     }
-    val text: LiveData<String> = _text
+
+    val result: MutableLiveData<String> by lazy {
+        MutableLiveData<String>()
+    }
 }
