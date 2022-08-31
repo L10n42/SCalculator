@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -40,9 +41,16 @@ class SteamFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnCount.setOnClickListener {
+        binding.editSellPrice.addTextChangedListener {
             count()
         }
+        binding.editBuyPrice.addTextChangedListener {
+            count()
+        }
+        binding.editCommission.addTextChangedListener {
+            count()
+        }
+
     }
 
     private fun setResultColor(percentValue: Float) = with(binding) {
@@ -72,22 +80,20 @@ class SteamFragment : Fragment() {
                     "${resources.getString(R.string.result_profit_percent)} " +
                     "$percentResult %"
 
+        }else {
+            setResultColor(1f)
+            steamViewModel.result.value = resources.getString(R.string.hint_result)
         }
     }
 
     private fun allPricesEntered() : Boolean {
-        if(binding.editSellPrice.text.toString() == ""){
-            Toast.makeText(context!!, resources.getString(R.string.error_enter_sell_price),
-                Toast.LENGTH_SHORT).show()
+        if(binding.editSellPrice.text.toString() == "")
             return false
 
-        } else if (binding.editBuyPrice.text.toString() == ""){
-            Toast.makeText(context!!, resources.getString(R.string.error_enter_buy_price),
-                Toast.LENGTH_SHORT).show()
+        else if (binding.editBuyPrice.text.toString() == "")
             return false
 
-        } else if (binding.editCommission.text.toString() == "") {
-            Log.d("----------", "true")
+        else if (binding.editCommission.text.toString() == "") {
             steamViewModel.commission.value = 13f
             return true
 

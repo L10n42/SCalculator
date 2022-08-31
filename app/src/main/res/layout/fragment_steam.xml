@@ -77,20 +77,21 @@
 
     <EditText
         android:id="@+id/editCommission"
-        android:layout_width="170sp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20sp"
         android:layout_marginTop="30sp"
-        android:hint="@string/hint_commission_percent"
         android:background="@drawable/form_stroke"
+        android:hint="@string/hint_commission_percent"
         android:inputType="numberDecimal"
-        android:textColorHint="@color/saddle_brown"
         android:maxLines="1"
         android:minHeight="50sp"
         android:paddingVertical="5sp"
         android:textAlignment="center"
         android:textColor="@color/spanish_orange"
+        android:textColorHint="@color/saddle_brown"
         android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editBuyPrice" />
 
@@ -108,22 +109,6 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/editCommission"
         app:layout_constraintTop_toTopOf="@id/editCommission" />
-
-    <TextView
-        android:id="@+id/btnCount"
-        android:layout_width="170sp"
-        android:layout_height="50sp"
-        android:layout_marginTop="30sp"
-        android:elevation="10sp"
-        android:background="@drawable/form_stroke_button"
-        android:text="@string/btn_count_text"
-        android:textAlignment="center"
-        android:paddingTop="5sp"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:textColor="@color/spanish_orange"
-        app:layout_constraintEnd_toEndOf="@+id/editBuyPrice"
-        app:layout_constraintTop_toBottomOf="@+id/editBuyPrice" />
 
 
     <TextView

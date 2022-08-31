@@ -48,7 +48,7 @@
 
 
     <TextView
-        android:id="@+id/editPercent1"
+        android:id="@+id/editPercent1_static"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30sp"
@@ -83,14 +83,14 @@
         app:layout_constraintEnd_toEndOf="@+id/view2" />
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="="
-        android:textColor="@color/selective_yellow"
-        android:textSize="60sp"
+    <ImageView
+        android:id="@+id/btnCount"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/form_stroke_button"
+        android:src="@drawable/ic_baseline_drag_handle_24"
+        app:tint="@color/spanish_orange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -99,23 +99,23 @@
         android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="1sp"
-        android:layout_marginTop="43sp"
         android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="25dp"
         android:background="@color/selective_yellow"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/btnCount"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/btnCount" />
 
     <View
         android:id="@+id/view2"
         android:layout_width="0dp"
         android:layout_height="1sp"
-        android:layout_marginTop="43sp"
+        android:layout_marginTop="25sp"
         android:layout_marginHorizontal="20sp"
         android:background="@color/selective_yellow"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@id/btnCount"
+        app:layout_constraintTop_toTopOf="@+id/btnCount" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

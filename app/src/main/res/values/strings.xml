@@ -8,8 +8,8 @@
     <string name="title_currencyEx">Currency exchange</string>
 
     //hints
-    <string name="hint_commission_percent">13%</string>
-    <string name="hint_result">Here will be result…</string>
+    <string name="hint_commission_percent">Default commission: 13%</string>
+    <string name="hint_result">Input all data to get result</string>
 
     // tv/et titles
     <string name="title_commission">Commission</string>
@@ -21,8 +21,7 @@
     <string name="btn_count_text">Count</string>
 
     // error messages
-    <string name="error_enter_buy_price">Enter buy price!</string>
-    <string name="error_enter_sell_price">Enter sell price!</string>
+    <string name="error_enter_data">Enter your data!</string>
 
     // messages
     <string name="result_profit">Clean profit:</string>
