@@ -2,7 +2,7 @@
     <string name="app_name">SCalculator</string>
 
     //fragment titles
-    <string name="title_calculator">Calculator</string>
+    <string name="title_calculator">Sticker overpay</string>
     <string name="title_steamC">Steam profit calculator</string>
     <string name="title_percentC">Percent calculator</string>
     <string name="title_currencyEx">Currency exchange</string>
@@ -33,6 +33,17 @@
         <item>EUR</item>
         <item>UAH</item>
         <item>CNY</item>
+    </string-array>
+
+    <string-array name="weapons">
+        <item>AK-47</item>
+        <item>AWP</item>
+        <item>M4A1-S</item>
+        <item>M4A4</item>
+        <item>Desert Eagle</item>
+        <item>USP-S</item>
+        <item>p250</item>
+        <item>Glock-18</item>
     </string-array>
 
 

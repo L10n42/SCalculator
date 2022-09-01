@@ -13,7 +13,6 @@ import com.example.scalculator_20.R
 
 class CurrencySpinnerAdapter(context: Context, iconsArray: Array<Int>) : BaseAdapter() {
 
-    private val context = context
     private val icons = iconsArray
     private val textArray = context.resources.getStringArray(R.array.currencies)
 

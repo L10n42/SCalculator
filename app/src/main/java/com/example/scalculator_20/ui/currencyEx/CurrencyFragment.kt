@@ -51,6 +51,11 @@ class CurrencyFragment : Fragment() {
         binding.chooseCurrencyFrom.setSelection(0)
         binding.chooseCurrencyTo.setSelection(2)
 
+        setCurrencyChangeListeners()
+
+    }
+
+    private fun setCurrencyChangeListeners() {
         binding.chooseCurrencyFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 Toast.makeText(context, "FROM selected: " + adapterView!!.getItemAtPosition(position).toString(),
@@ -60,6 +65,7 @@ class CurrencyFragment : Fragment() {
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
         }
+
         binding.chooseCurrencyTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 Toast.makeText(context, "TO selected: " + parent!!.getItemAtPosition(position).toString(),
@@ -68,9 +74,7 @@ class CurrencyFragment : Fragment() {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
-
         }
-
     }
 
 }

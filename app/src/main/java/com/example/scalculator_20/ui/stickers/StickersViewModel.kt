@@ -1,16 +1,32 @@
 package com.example.scalculator_20.ui.stickers
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class StickersViewModel : ViewModel() {
 
-    private var _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+    val weapon: MutableLiveData<String> by lazy {
+        MutableLiveData<String>()
     }
-    val text: LiveData<String> = _text
 
-    fun updateText(newText: String) {
+    val weaponImg: MutableLiveData<Int> by lazy {
+        MutableLiveData<Int>()
     }
+
+    val commP1: MutableLiveData<Float> by lazy {
+        MutableLiveData<Float>()
+    }
+
+    val commP2: MutableLiveData<Float> by lazy {
+        MutableLiveData<Float>()
+    }
+
+    val commP3: MutableLiveData<Float> by lazy {
+        MutableLiveData<Float>()
+    }
+
+    val commP4: MutableLiveData<Float> by lazy {
+        MutableLiveData<Float>()
+    }
+
 }
