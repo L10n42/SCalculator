@@ -86,7 +86,7 @@ class PercentFragment : Fragment() {
 
         when (allDataEntered()) {
             1 -> {
-                editPercent2.setText(((staticPercent * num(2)) / num(1)).toString() + "%")
+                editPercent2.setText( String.format("%.2f",(staticPercent * num(2)) / num(1)) + "%" )
                 editPercent2.setTextColor(resources.getColor(R.color.green))
             }
             2 -> {

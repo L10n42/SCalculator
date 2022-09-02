@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/black_chocolate"
@@ -7,13 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.stickers.StickersFragment">
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <Spinner
             android:id="@+id/chooseWeaponType"
@@ -46,6 +39,7 @@
             android:paddingVertical="5sp"
             android:textAlignment="center"
             android:textColor="@color/spanish_orange"
+            android:textColorHint="@color/saddle_brown"
             android:textSize="26sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -80,6 +74,7 @@
             android:paddingVertical="5sp"
             android:textAlignment="center"
             android:textColor="@color/spanish_orange"
+            android:textColorHint="@color/saddle_brown"
             android:textSize="26sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -114,6 +109,7 @@
             android:paddingVertical="5sp"
             android:textAlignment="center"
             android:textColor="@color/spanish_orange"
+            android:textColorHint="@color/saddle_brown"
             android:textSize="26sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -148,6 +144,7 @@
             android:paddingVertical="5sp"
             android:textAlignment="center"
             android:textColor="@color/spanish_orange"
+            android:textColorHint="@color/saddle_brown"
             android:textSize="26sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -168,26 +165,6 @@
             app:layout_constraintStart_toStartOf="@id/editPos4"
             app:layout_constraintTop_toTopOf="@id/editPos4" />
 
-
-        <TextView
-            android:id="@+id/btnCount"
-            android:layout_width="0dp"
-            android:layout_height="50sp"
-            android:layout_marginTop="15sp"
-            android:layout_marginHorizontal="70sp"
-            android:background="@drawable/form_stroke_button"
-            android:elevation="10sp"
-            android:paddingTop="5sp"
-            android:text="Count"
-            android:textAlignment="center"
-            android:textColor="@color/spanish_orange"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editPos4" />
-
-
         <TextView
             android:id="@+id/tvResult"
             android:layout_width="0dp"
@@ -197,13 +174,14 @@
             android:background="@drawable/form_stroke"
             android:minHeight="50sp"
             android:paddingVertical="7sp"
-            android:text="Overpayment for stickers: 3456.23"
             android:textAlignment="center"
             android:textColor="@color/spanish_orange"
+            android:hint="@string/hint_result"
+            android:textColorHint="@color/saddle_brown"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnCount" />
+            app:layout_constraintTop_toBottomOf="@id/editPos4" />
 
         <TextView
             android:id="@+id/tvResultTitle"
@@ -220,8 +198,4 @@
             app:layout_constraintStart_toStartOf="@id/tvResult"
             app:layout_constraintTop_toTopOf="@id/tvResult" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.core.widget.NestedScrollView>
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

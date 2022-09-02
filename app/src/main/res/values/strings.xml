@@ -2,14 +2,15 @@
     <string name="app_name">SCalculator</string>
 
     //fragment titles
-    <string name="title_calculator">Sticker overpay</string>
+    <string name="title_calculator">Sticker overpayment</string>
     <string name="title_steamC">Steam profit calculator</string>
     <string name="title_percentC">Percent calculator</string>
     <string name="title_currencyEx">Currency exchange</string>
 
     //hints
     <string name="hint_commission_percent">Default commission: 13%</string>
-    <string name="hint_result">Input all data to get result</string>
+    <string name="hint_result">Input data to get result</string>
+    <string name="hint_overpayment">Overpayment -</string>
 
     // tv/et titles
     <string name="title_commission">Commission</string>
@@ -26,6 +27,7 @@
     // messages
     <string name="result_profit">Clean profit:</string>
     <string name="result_profit_percent">Profit(%):</string>
+    <string name="result_overpayment">Overpayment for sticker:</string>
 
 
     <string-array name="currencies">

@@ -13,19 +13,19 @@ class StickersViewModel : ViewModel() {
         MutableLiveData<Int>()
     }
 
-    val commP1: MutableLiveData<Float> by lazy {
+    val overpaymentP1: MutableLiveData<Float> by lazy {
         MutableLiveData<Float>()
     }
 
-    val commP2: MutableLiveData<Float> by lazy {
+    val overpaymentP2: MutableLiveData<Float> by lazy {
         MutableLiveData<Float>()
     }
 
-    val commP3: MutableLiveData<Float> by lazy {
+    val overpaymentP3: MutableLiveData<Float> by lazy {
         MutableLiveData<Float>()
     }
 
-    val commP4: MutableLiveData<Float> by lazy {
+    val overpaymentP4: MutableLiveData<Float> by lazy {
         MutableLiveData<Float>()
     }
 
