@@ -49,10 +49,12 @@ class StickersFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         fillSpinner()
 
-        binding.editPos1.addTextChangedListener { count() }
-        binding.editPos2.addTextChangedListener { count() }
-        binding.editPos3.addTextChangedListener { count() }
-        binding.editPos4.addTextChangedListener { count() }
+        binding.btnClear.setOnClickListener {
+            clearInputData()
+            it.visibility = View.GONE
+        }
+
+        setTextChangeListeners()
     }
 
     private fun getPos(p: Int) : Float {
@@ -152,6 +154,40 @@ class StickersFragment : Fragment() {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
+        }
+    }
+
+    private fun setTextChangeListeners() {
+        binding.editPos1.addTextChangedListener {
+            count()
+            if (binding.editPos1.text.toString() != "")
+                binding.btnClear.visibility = View.VISIBLE
+            else
+                binding.btnClear.visibility = View.GONE
+        }
+
+        binding.editPos2.addTextChangedListener {
+            count()
+            if (binding.editPos2.text.toString() != "")
+                binding.btnClear.visibility = View.VISIBLE
+            else
+                binding.btnClear.visibility = View.GONE
+        }
+
+        binding.editPos3.addTextChangedListener {
+            count()
+            if (binding.editPos3.text.toString() != "")
+                binding.btnClear.visibility = View.VISIBLE
+            else
+                binding.btnClear.visibility = View.GONE
+        }
+
+        binding.editPos4.addTextChangedListener {
+            count()
+            if (binding.editPos4.text.toString() != "")
+                binding.btnClear.visibility = View.VISIBLE
+            else
+                binding.btnClear.visibility = View.GONE
         }
     }
 

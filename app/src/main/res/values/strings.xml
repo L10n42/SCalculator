@@ -11,23 +11,35 @@
     <string name="hint_commission_percent">Default commission: 13%</string>
     <string name="hint_result">Input data to get result</string>
     <string name="hint_overpayment">Overpayment -</string>
+    <string name="hint_input_value">Input your value here</string>
+    <string name="hint_result_currency">Here will be result…</string>
+
 
     // tv/et titles
     <string name="title_commission">Commission</string>
     <string name="title_buy_price">Buy price</string>
     <string name="title_sell_price">Sell price</string>
     <string name="title_result">Result</string>
+    <string name="title_from">From</string>
+    <string name="title_to">To</string>
+    <string name="title_value">Value</string>
+
 
     // button titles
     <string name="btn_count_text">Count</string>
+    <string name="btn_convert">Convert</string>
 
     // error messages
     <string name="error_enter_data">Enter your data!</string>
+    <string name="error_internet_connection">You might not have internet connection</string>
 
     // messages
     <string name="result_profit">Clean profit:</string>
     <string name="result_profit_percent">Profit(%):</string>
     <string name="result_overpayment">Overpayment for sticker:</string>
+    <string name="updated_date">Updated date:</string>
+    <string name="rate">Rate:</string>
+    <string name="result">Result:</string>
 
 
     <string-array name="currencies">

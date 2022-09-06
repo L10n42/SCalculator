@@ -18,6 +18,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/form_stroke_round_button"
+            android:src="@drawable/ic_baseline_clear_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/spanish_orange" />
+
+
         <ImageView
             android:id="@+id/instructionForSticker"
             android:layout_width="0dp"
