@@ -13,7 +13,9 @@
     <string name="hint_overpayment">Overpayment -</string>
     <string name="hint_input_value">Input your value here</string>
     <string name="hint_result_currency">Here will be result…</string>
-
+    <string name="hint_price">Price</string>
+    <string name="hint_100_percent">100%</string>
+    <string name="hint_percent">%</string>
 
     // tv/et titles
     <string name="title_commission">Commission</string>
@@ -23,7 +25,10 @@
     <string name="title_from">From</string>
     <string name="title_to">To</string>
     <string name="title_value">Value</string>
-
+    <string name="title_pos_1">Pos-1</string>
+    <string name="title_pos_2">Pos-2</string>
+    <string name="title_pos_3">Pos-3</string>
+    <string name="title_pos_4">Pos-4</string>
 
     // button titles
     <string name="btn_count_text">Count</string>
