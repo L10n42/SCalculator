@@ -5,7 +5,7 @@
     <string name="title_calculator">Sticker overpayment</string>
     <string name="title_steamC">Steam profit calculator</string>
     <string name="title_percentC">Percent calculator</string>
-    <string name="title_currencyEx">Currency exchange</string>
+    <string name="title_currencyEx">Currency convertor</string>
 
     //hints
     <string name="hint_commission_percent">Default commission: 13%</string>

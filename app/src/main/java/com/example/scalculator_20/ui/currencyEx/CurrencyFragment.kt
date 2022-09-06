@@ -19,11 +19,11 @@ import com.example.scalculator_20.R
 import com.example.scalculator_20.databinding.FragmentCurrencyBinding
 import com.example.scalculator_20.network.EndPoints
 import com.example.scalculator_20.network.RetrofitInstance
+import com.example.scalculator_20.network.datamodel.CurrencyDataModel
 import retrofit2.HttpException
 import java.io.IOException
 
     const val TAG = "CurrencyFragment"
-    const val TAG_RESULT = "my request result"
 
 class CurrencyFragment : Fragment() {
 
@@ -88,14 +88,47 @@ class CurrencyFragment : Fragment() {
                 formResultString(
                     response.body()!!.updated_date,
                     String.format("%.2f", response.body()!!.amount),
-                    String.format("%.2f", response.body()!!.rates.uAH.rate.toDouble()),
-                    String.format("%.2f", response.body()!!.rates.uAH.rate_for_amount.toDouble())
+                    String.format("%.2f", getRate(response.body()!!)),
+                    String.format("%.2f", getRateForAmount(response.body()!!))
                 )
             } else {
                 Log.e(TAG, "Response not successful")
             }
             binding.progressBar.isVisible = false
         }
+    }
+
+    private fun getRateForAmount(data: CurrencyDataModel) : Double {
+        return when (currencyViewModel.currencyTo.value){
+            "USD" -> data.rates.uSD.rate_for_amount.toDouble()
+
+            "EUR" -> data.rates.eUR.rate_for_amount.toDouble()
+
+            "UAH" -> data.rates.uAH.rate_for_amount.toDouble()
+
+            "CNY" -> data.rates.cNY.rate_for_amount.toDouble()
+
+            else -> 0.0
+        }
+    }
+
+    private fun getRate(data: CurrencyDataModel) : Double {
+        return when (currencyViewModel.currencyTo.value){
+            "USD" -> data.rates.uSD.rate.toDouble()
+
+            "EUR" -> data.rates.eUR.rate.toDouble()
+
+            "UAH" -> data.rates.uAH.rate.toDouble()
+
+            "CNY" -> data.rates.cNY.rate.toDouble()
+
+            else -> 0.0
+        }
+    }
+
+    private fun clearEnteredData() {
+        binding.inputAmount.text.clear()
+        binding.tvResult.text = ""
     }
 
     private fun formResultString(date: String, amount: String, rate: String, rateForAmount: String){
@@ -133,9 +166,9 @@ class CurrencyFragment : Fragment() {
         binding.chooseCurrencyFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, position: Int, id: Long) {
 
+                clearEnteredData()
                 currencyViewModel.currencyFrom.value = adapterView!!.getItemAtPosition(position).toString()
-//                Toast.makeText(context, "FROM selected: " + adapterView.getItemAtPosition(position).toString(),
-//                    Toast.LENGTH_SHORT).show()
+
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
@@ -144,9 +177,9 @@ class CurrencyFragment : Fragment() {
         binding.chooseCurrencyTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
 
+                clearEnteredData()
                 currencyViewModel.currencyTo.value = parent!!.getItemAtPosition(position).toString()
-//                Toast.makeText(context, "TO selected: " + parent.getItemAtPosition(position).toString(),
-//                    Toast.LENGTH_SHORT).show()
+
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
