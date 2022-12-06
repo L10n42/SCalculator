@@ -10,7 +10,7 @@
     //hints
     <string name="hint_commission_percent">Default commission: 13%</string>
     <string name="hint_result">Input data to get result</string>
-    <string name="hint_overpayment">Overpayment -</string>
+    <string name="hint_sticker_worths">Sticker worths</string>
     <string name="hint_input_value">Input your value here</string>
     <string name="hint_result_currency">Here will be result…</string>
     <string name="hint_price">Price</string>

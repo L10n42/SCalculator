@@ -55,6 +55,7 @@ class StickersFragment : Fragment() {
         }
 
         setTextChangeListeners()
+        setPercentChangeListeners()
     }
 
     private fun getPos(p: Int) : Float {
@@ -107,9 +108,17 @@ class StickersFragment : Fragment() {
         binding.tvResult.text = ""
     }
 
+    private fun clearPercentData() {
+        binding.pos1OverpayPercent.text.clear()
+        binding.pos2OverpayPercent.text.clear()
+        binding.pos3OverpayPercent.text.clear()
+        binding.pos4OverpayPercent.text.clear()
+    }
+
     private fun setObservers() {
         stickersViewModel.weapon.observe(viewLifecycleOwner, Observer {
             clearInputData()
+            clearPercentData()
         })
 
         stickersViewModel.weaponImg.observe(viewLifecycleOwner, Observer {
@@ -117,19 +126,19 @@ class StickersFragment : Fragment() {
         })
 
         stickersViewModel.overpaymentP1.observe(viewLifecycleOwner, Observer {
-            binding.editPos1.hint = resources.getString(R.string.hint_overpayment) + " $it%"
+            binding.pos1OverpayPercent.hint = "$it %"
         })
 
         stickersViewModel.overpaymentP2.observe(viewLifecycleOwner, Observer {
-            binding.editPos2.hint = resources.getString(R.string.hint_overpayment) + " $it%"
+            binding.pos2OverpayPercent.hint = "$it %"
         })
 
         stickersViewModel.overpaymentP3.observe(viewLifecycleOwner, Observer {
-            binding.editPos3.hint = resources.getString(R.string.hint_overpayment) + " $it%"
+            binding.pos3OverpayPercent.hint = "$it %"
         })
 
         stickersViewModel.overpaymentP4.observe(viewLifecycleOwner, Observer {
-            binding.editPos4.hint = resources.getString(R.string.hint_overpayment) + " $it%"
+            binding.pos4OverpayPercent.hint = "$it %"
         })
     }
 
@@ -154,6 +163,40 @@ class StickersFragment : Fragment() {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
+        }
+    }
+
+    private fun setPercentChangeListeners() {
+        binding.pos1OverpayPercent.addTextChangedListener { newPercent ->
+            if (newPercent.toString().trim() != "")
+                stickersViewModel.overpaymentP1.value = newPercent.toString().toFloat()
+            else
+                stickersViewModel.overpaymentP1.value = stickersViewModel.rememberedOverpaymentP1.value
+            count()
+        }
+
+        binding.pos2OverpayPercent.addTextChangedListener { newPercent ->
+            if (newPercent.toString().trim() != "")
+                stickersViewModel.overpaymentP2.value = newPercent.toString().toFloat()
+            else
+                stickersViewModel.overpaymentP2.value = stickersViewModel.rememberedOverpaymentP2.value
+            count()
+        }
+
+        binding.pos3OverpayPercent.addTextChangedListener { newPercent ->
+            if (newPercent.toString().trim() != "")
+                stickersViewModel.overpaymentP3.value = newPercent.toString().toFloat()
+            else
+                stickersViewModel.overpaymentP3.value = stickersViewModel.rememberedOverpaymentP3.value
+            count()
+        }
+
+        binding.pos4OverpayPercent.addTextChangedListener { newPercent ->
+            if (newPercent.toString().trim() != "")
+                stickersViewModel.overpaymentP4.value = newPercent.toString().toFloat()
+            else
+                stickersViewModel.overpaymentP4.value = stickersViewModel.rememberedOverpaymentP4.value
+            count()
         }
     }
 
@@ -214,9 +257,13 @@ class StickersFragment : Fragment() {
 
     private fun setOverpayment(pos1: Float, pos2: Float, pos3: Float, pos4: Float) {
         stickersViewModel.overpaymentP1.value = pos1
+        stickersViewModel.rememberedOverpaymentP1.value = pos1
         stickersViewModel.overpaymentP2.value = pos2
+        stickersViewModel.rememberedOverpaymentP2.value = pos2
         stickersViewModel.overpaymentP3.value = pos3
+        stickersViewModel.rememberedOverpaymentP3.value = pos3
         stickersViewModel.overpaymentP4.value = pos4
+        stickersViewModel.rememberedOverpaymentP4.value = pos4
     }
 
 

@@ -45,7 +45,8 @@
             android:id="@+id/editPos1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="140dp"
             android:background="@drawable/form_stroke"
             android:inputType="numberDecimal|number"
             android:maxLines="1"
@@ -54,9 +55,30 @@
             android:textAlignment="center"
             android:textColor="@color/spanish_orange"
             android:textColorHint="@color/saddle_brown"
-            android:textSize="26sp"
+            android:textSize="22sp"
+            android:hint="@string/hint_sticker_worths"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instructionForSticker" />
+
+        <EditText
+            android:id="@+id/pos1OverpayPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/form_stroke"
+            android:inputType="numberDecimal|number"
+            android:maxLines="1"
+            android:minHeight="50sp"
+            android:paddingVertical="5sp"
+            android:textAlignment="center"
+            android:textColor="@color/spanish_orange"
+            android:textColorHint="@color/saddle_brown"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/editPos1"
             app:layout_constraintTop_toBottomOf="@id/instructionForSticker" />
 
         <TextView
@@ -74,12 +96,12 @@
             app:layout_constraintStart_toStartOf="@id/editPos1"
             app:layout_constraintTop_toTopOf="@id/editPos1" />
 
-
         <EditText
             android:id="@+id/editPos2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="140dp"
             android:layout_marginTop="15sp"
             android:background="@drawable/form_stroke"
             android:inputType="numberDecimal|number"
@@ -89,9 +111,30 @@
             android:textAlignment="center"
             android:textColor="@color/spanish_orange"
             android:textColorHint="@color/saddle_brown"
-            android:textSize="26sp"
+            android:textSize="22sp"
+            android:hint="@string/hint_sticker_worths"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editPos1" />
+
+        <EditText
+            android:id="@+id/pos2OverpayPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/form_stroke"
+            android:inputType="numberDecimal|number"
+            android:maxLines="1"
+            android:minHeight="50sp"
+            android:paddingVertical="5sp"
+            android:textAlignment="center"
+            android:textColor="@color/spanish_orange"
+            android:textColorHint="@color/saddle_brown"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editPos2"
             app:layout_constraintTop_toBottomOf="@id/editPos1" />
 
         <TextView
@@ -114,7 +157,8 @@
             android:id="@+id/editPos3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="140dp"
             android:layout_marginTop="15sp"
             android:background="@drawable/form_stroke"
             android:inputType="numberDecimal|number"
@@ -124,9 +168,30 @@
             android:textAlignment="center"
             android:textColor="@color/spanish_orange"
             android:textColorHint="@color/saddle_brown"
-            android:textSize="26sp"
+            android:textSize="22sp"
+            android:hint="@string/hint_sticker_worths"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editPos2" />
+
+        <EditText
+            android:id="@+id/pos3OverpayPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/form_stroke"
+            android:inputType="numberDecimal|number"
+            android:maxLines="1"
+            android:minHeight="50sp"
+            android:paddingVertical="5sp"
+            android:textAlignment="center"
+            android:textColor="@color/spanish_orange"
+            android:textColorHint="@color/saddle_brown"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editPos3"
             app:layout_constraintTop_toBottomOf="@id/editPos2" />
 
         <TextView
@@ -149,7 +214,8 @@
             android:id="@+id/editPos4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="140dp"
             android:layout_marginTop="15sp"
             android:background="@drawable/form_stroke"
             android:inputType="numberDecimal|number"
@@ -159,9 +225,30 @@
             android:textAlignment="center"
             android:textColor="@color/spanish_orange"
             android:textColorHint="@color/saddle_brown"
-            android:textSize="26sp"
+            android:textSize="22sp"
+            android:hint="@string/hint_sticker_worths"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editPos3" />
+
+        <EditText
+            android:id="@+id/pos4OverpayPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/form_stroke"
+            android:inputType="numberDecimal|number"
+            android:maxLines="1"
+            android:minHeight="50sp"
+            android:paddingVertical="5sp"
+            android:textAlignment="center"
+            android:textColor="@color/spanish_orange"
+            android:textColorHint="@color/saddle_brown"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editPos4"
             app:layout_constraintTop_toBottomOf="@id/editPos3" />
 
         <TextView
@@ -183,7 +270,7 @@
             android:id="@+id/tvResult"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
+            android:layout_marginHorizontal="16sp"
             android:layout_marginTop="15sp"
             android:background="@drawable/form_stroke"
             android:minHeight="50sp"
